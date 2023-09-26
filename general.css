@@ -1,0 +1,11 @@
+html {
+    scroll-behavior:  smooth;
+}
+
+h1,h2,h3,p{
+    font-family: 'Work Sans', sans-serif;   
+}
+
+.serif-h1{
+    font-family: 'Playfair Display', serif;
+}
