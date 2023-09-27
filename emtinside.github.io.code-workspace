@@ -2,12 +2,6 @@
 	"folders": [
 		{
 			"path": "."
-		},
-		{
-			"path": "../../Downloads/TT_fors"
-		},
-		{
-			"path": "../../Downloads/Lovelace"
 		}
 	],
 	"settings": {}
