@@ -1,0 +1,280 @@
+/* Color Coding Legend
+--> Red: Body
+--> Blue: Left column
+--> Green: Right colum
+--> Pink: Grid
+--> White: Additional elements
+*/
+
+/* GENERAL SETTINGS */
+html{
+    background-color: rgb(255,248,237);
+}
+
+body{
+    color: #53504B;
+    margin: 5%;
+}
+
+/* IMAGES AS A WHOLE */
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+/* HEADINGS AND FONTS */
+h1{
+    font-size: 50px;
+    color: #68857F;
+}
+
+h2{
+    font-size: 25px;
+    font-family: "ttfors_regular", sans-serif;
+}
+
+.sans_title{
+    font-family: "ttfors_regular", sans-serif;
+}
+
+.serif_title{
+    font-family: "Lora", serif;
+}
+
+p{
+    font-family: "aileron";
+    font-size: 15px;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+    color: #68857F;
+}
+
+/* DIV --- TITLES */
+#titles{
+    display: grid;
+    grid-template-columns: 93% 7%;
+    grid-template-areas: "titlep icon" "titlehey ." "titlename .";
+    grid-template-rows: 3;
+    row-gap: 0px;
+}
+
+.titles-child{
+    /* border: 1px solid black; */
+    line-height: 0;
+}
+.titles-child #serif_title{
+    grid-area: titlehey;
+}
+.titles-child #serif_title{
+    grid-area: titlename;
+}
+.titles-child img{
+    opacity: 85%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.titles-child p{
+    /* border: 1px solid black; */
+    line-height: 2;
+    grid-area: titlep;
+}
+
+/* DIV --- INTRODUCTION */
+#introduction{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    grid-template-areas: ". . title" ". . sidebar";
+    align-items: center;
+}
+.left-abs-img{
+    position: absolute;
+    opacity: 85%;
+    left: 0%;
+    width: 60%;
+    height: 30%;
+}
+
+.left-abs-img img{
+    opacity: 85%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#introduction #intro-title{
+    display: flex;
+    align-items: center;
+    grid-area: title;
+}
+
+#introduction p{
+    grid-area: sidebar;
+    margin: 0px;
+}
+
+/* DIV --- ONGOING PROJECTS */
+#projects{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-right{
+    opacity: 85%;
+    width: 31%;
+    height: fit-content;
+    margin-left: auto;
+}
+.flex-left{
+    opacity: 85%;
+    width: 31%;
+    height: fit-content;
+    margin-right: auto;
+}
+.flex-center{
+    width: 31%;
+    opacity: 85%;
+    height: fit-content;
+    margin: auto;
+}
+#work-header{
+    font-size: 40px;
+    color: #68857F;
+    line-height: 0;
+}
+#git{
+    row-gap: 5px;
+    text-align: center;
+}
+.flex-60{
+    width: 60%;
+}
+
+/* DIV --- THE CODERSCHOOL */
+.work-projects{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25vw 25vw; 
+    grid-template-areas: "text text img1 img2" "img3 img4 img5 img6";
+    gap: 10px;
+}
+#work-projects-title{
+    grid-area: text;
+}
+#coder-header{
+    font-size: 25px;
+    color: #68857F;
+}
+.img-cover{
+    opacity: 1;
+}
+.img-cover:hover{
+    opacity: 0;
+    transition: 0.3s ;
+}
+.img-underlay{
+    opacity: 1;
+}
+#img1{
+    grid-area: img1;
+}
+#img2{
+    grid-area: img2;
+}
+#img3{
+    grid-area: img3;
+}
+#img4{
+    grid-area: img4;
+}
+#img5{
+    grid-area: img5;
+}
+#img6{
+    grid-area: img6;
+}
+
+/* DIV --- SOCIALS */
+.socials{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.socials  h2{
+    font-size: 50px;
+    line-height: 0;
+    color: #68857F;
+}
+.socials #find-me{
+    font-size: 25px;
+    line-height: 0;
+    font-family: "Lora", serif;
+    font-style: italic;
+    color: #68857F;
+}
+.socials  #socials{
+    font-size: 15px;
+    font-family: ttfors, sans-serif;
+    font-style: normal;
+    color: #53504B;
+}
+
+/* CLEAR DIVIDERS */
+.clear-div-section{
+    height: 5vh;
+    left: 0%;
+    width: 100%;
+}
+
+/* FUN FILLER SHAPES */
+.dot {
+    height: 40px;
+    width: 40px;
+    color: rgb(255,248,237);
+    background-color: #6C969D;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px;
+}
+
+/* ANIMATION */
+@keyframes launch-left{
+    0%{
+        opacity: 0;
+        transform: translate(-500px);
+    }
+    20%{
+        opacity: 25%;
+        transform: translate(-500px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+@keyframes fade-out{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+}
+
+@keyframes fade-in{
+    0%{
+        visibility: hidden;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
+}

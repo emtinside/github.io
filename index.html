@@ -4,148 +4,229 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emily Tumacder</title>
+    <link rel="icon" type="image/logo" href="/imgs/icon.png">
 
-    <!-- Import stylesheets-->
-    <link rel="stylesheet" href="general.css" />
-    <link rel="stylesheet" href="fonts.css" />
-    <!-- Import fonts
-        Roboto : 300 400 regular 700 bold
-        Playfair: 400 italic
-        Work sans: 400 regular 500 medium
+    <!--
+        Import Stylesheets
     -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto:wght@300;400;700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
-    
-</head>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+
+    <!--
+        Import Google Fonts
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
   <body>
-    <div class = "page">
-        <div class="nav"></div>
-   
-        <div id="title">
-            <p> + Updated: September 25, 2023 + </p>
-            <h1> HEY THERE! </h1>   
-            <h1 class ="serif-h1"> >>> I'm Emily</h2>
-        </div>
-      
-        <div class = "clear-div-short"></div>
-        
-        <section class="main" id="about">
-            <div class = "left-img">
-                <img class="image-defaults" alt="Purdue university- engineering fountain" src="purdue2.jpg"/> 
-            </div>   
-                
-            <div id = "about-me">  
-                <div class = "left"></div>   
-                <div class = "right"> 
-                    <div class = "right-aligned-headers">
-                        <div class = "dot"></div> 
-                        <h2>ABOUT ME</h2>
-                    </div>
-                    <div class = "right-para">
-                        <p> I’m a first year engineering 
-                            student at <a href="https://engineering.purdue.edu/ECE">Purdue University</a>, studying 
-                            Computer Engineering this coming Spring! 
-                            My recent fixes have been dabbling in 
-                            the combination of machine learning and
-                            computer vision.
-                        </p>
-                    </div>
-                </div>  
-
-            </div>
-        </section>
-
-        <div class = "clear-div-section"></div>
-
-        <section class= "main" id= "work-projects">
-            <div class = "left">
-                <div>
-                    <p>WORK AND PROJECT EXPERIENCE</p>
-                    <h2>RECENT PROJECTS</h2>
-                </div>
-
-                <div class = "right"></div>
-
-                <div class = "right">
-                    <div>
-                        <p><i>Pomodoro with Spotify Integration:</i></p>
-                    
-                        <p>Using the Spotify API, 
-                            take in the user’s account info to grab their 
-                            currently playing album covers and songs, 
-                            which will translate into major colors that 
-                            create the theme of the pomodoro timer/task manager. 
-                        </p>
-                    </div>
-                </div>
-
-                <div class="clear-div-vertical"></div>
-
-                <div class = "left">
-                    <img class ="image-defaults" src="spotify_mockup.png">
-                </div>
-        
-                <div>
-                    <p>
-                       <i>Mini- Autonomous vehicle:</i> As part of a month-long 
-                        research program at UCSD, we used Python, openCV, 
-                        Tensorflow, DonkeyCar Sims, and OnShape CAD software. 
-                        I worked alongside a team of 2 others to design 
-                        and print a chassis and camera mount for a small 
-                        autonomous vehicle, which we trained using sim and 
-                        real life data.
-                    </p>
-                </div>
-            </div>
-
-            <div class = "right">
-                <div class="clear-div-section"></div>
-
-                <p id="git">Check out my <a href="https://github.com/emtinside">github</a> for my repositories!</p> 
-                <p>
-                    <i>Plant classification</i>: Based on the public <a href="https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/images/classification.ipynb">Tensorflow Google Colaboratory</a>, 
-                    I’m working on a model trains off a data base of local plants, 
-                    identify a photo it's given, and use web-scraping to find information about the plant
-                </p>       
-                <div>
-                    <div>
-                        <div class="dot">......</div>
-                        <div class="dot">======</div>
-                        <div class="dot">\\\\\\</div>
-                        <div class="dot">______</div>
-                        <div class="dot">>>>>>></div>
-                    </div>
-                    <div class = "clear-div-short"></div>
-                    <img class="image-defaults" src="auto_vehicle.png">   
-                </div>
-            </div>
-        </section>
-
-        <div class="clear-div-section"></div>
-
-        <section id="coderschool">
-            <div class="full-grid">
-                <div class="grid00-01">
-                    <div class="basic-flex">
-                        <div class="dot"></div>
-                        <h2>
-                            THE CODERSCHOOL
-                        </h2>
-                    </div>>
-                </div>
-                <div class="grid02">help</div>
-                <div class="grid03">help</div>
-                <div class="grid10">help</div>
-                <div class="grid11">help</div>
-                <div class="grid12">help</div>
-                <div class="grid13">help</div>
-
-            </div>
-        </section>
-
+    <div id="titles">
+      <div class="titles-child">
+        <p>✢ Updated: 27 September 2023 ✢</p>
+      </div>
+      <div class="titles-child" id="logo">
+        <img src="imgs/icon.png">
+      </div>
+      <div class="titles-child" id="sans_title">
+        <h1 class="sans_title">HEY THERE!</h1>
+      </div>
+      <div></div>
+      <div class="titles-child" id ="serif_title">
+        <h1 class="serif_title" style="animation: launch-left 2s ease-in-out;">>>> I'm Emily</h1>
+      </div>
     </div>
 
+    <div class="clear-div-section"></div>
+
+    <div id="introduction">
+      <div class="left-abs-img">
+        <img src="imgs/purdue/purdue2.jpg" alt="purdue campus" />
+      </div>
+
+      <div id="intro-title">
+        <div class="dot"></div>
+        <h2>ABOUT ME</h2>
+      </div>
+
+      <p>
+        I’m a current first year engineering student at Purdue University,
+        studying Computer Engineering this coming Spring! My recent fixes have
+        been dabbling in the combination of machine learning and computer
+        vision.
+      </p>
+    </div>
+
+    <div class="clear-div-section"></div>
+    <div class="clear-div-section"></div>
+
+    <div id="projects">
+      <div id="intro-title">
+        <p>WORK AND PROJECT EXPERIENCE</p>
+        <h2 id="work-header">RECENT PROJECTS</h2>
+      </div>
+
+      <div class = "flex-right" id="git">
+        <p>
+            >>> <a href="https://github.com/emtinside">Check out my github for my repositories! </a> &#60&#60&#60 
+        </p>
+      </div>
+
+      <div class="flex-60">
+            <img src="/imgs/ucsd-auto/auto_vehicle.png">
+      </div>
+
+      <div class="flex-right">
+        <p>
+        <i>Mini- Autonomous vehicle (2022)</i> :  
+            <br>Using Python, openCV, Tensorflow,
+            DonkeyCar Sims, and OnShape CAD software, 
+            I worked alongside a team of 2 others 
+            to design and print a chassis and camera mount for a small 
+            autonomous vehicle, which we trained 
+            using sim and real life data.
+        </p>
+        <div>
+            <img src="/imgs/ucsd-auto/auto_team.JPG">
+        </div>
+      </div>
+
+      <div class="clear-div-section"></div>
+
+      <div class="flex-left">
+            <p>
+                <i>Pomodoro with Spotify Integration (ongoing)</i> : 
+                Using the Spotify API, take in the 
+                user’s account info to grab their 
+                currently playing album covers and songs, 
+                which will translate into major colors 
+                that create the theme of the pomodoro timer/task manager. 
+            </p>
+      </div>
+      <div class="flex-center">
+        <img src="/imgs/spotify/spotify_mockup.png">
+      </div>
+      <div class="flex-right">    
+        <img src="/imgs/binary-plant-model.png">
+        <p>
+        <i>Plant classification (ongoing)</i> :<br>
+                Based on the public Google Colab sheet, 
+                I’m working on a model that can take in a data base of 
+                local plants, identify them, and use web-scraping 
+        </p>
+      </div>
+
+      <div class="flex-left">
+        <p>
+            <i>Water reminder bottle attachment (ongoing)</i> : <br>
+            Using a Raspberry PI, load cell, 3D printed parts, and a resistance to voltage converter
+            my group and I are designing a device that beeps when you should drink water,
+            continuing to beep until a certain volume of water is drunk. Engineering class project. 
+        </p>
+    </div>
+    
+    <div class="flex-center">
+        <img src="/imgs/water-reminder/Cad.png">
+    </div>
+    <div class="flex-right">
+        <img src="/imgs/water-reminder/systems.png">
+        <img src="/imgs/water-reminder/boot.png">
+    </div>
+
+    <div class="clear-div-section"></div>
+
+    <div class="work-projects">
+        <div id="work-projects-title">
+            <div id="intro-title">
+                <h2 id="coder-header">THE CODERSCHOOL</h2>
+            </div>
+            <p>
+                A code coach of 2 years! 
+                I work with students K-12 to 
+                teach them fundamentals in Scratch, 
+                Java, Java for APCSA, Python, and MBots. 
+                Many of my projects focus on game development 
+                in these languages. Hover to take a look at 
+                some of my students’ games!
+                <br> <br>
+                Interested in lessons? Contact me: emilytmdr@gmail.com
+            </p>
+        </div>
+
+        <div class="img-underlay" id="img1">
+            <img src="/imgs/coder/ode.png">
+        </div>
+        <div id="img1">
+            <img class="img-cover" src="/imgs/coder/ode-head-1.png">
+        </div>
+
+        <div class="img-underlay" id="img2">
+            <img src="/imgs/coder/crusher.png">
+        </div>
+        <div id="img2">
+            <img class="img-cover" src="/imgs/coder/crusher-head-2.png">
+        </div>
+
+        <div class="img-underlay" id="img3">
+            <img src="/imgs/coder/ttt.png">
+        </div>
+        <div id="img3">
+            <img class="img-cover" src="/imgs/coder/ttt-head-3.png">
+        </div>
+
+        <div class="img-underlay" id="img4">
+            <img src="/imgs/coder/pokemon.png">
+        </div>
+        <div id="img4">
+            <img class="img-cover" src="/imgs/coder/pokemon-head-4.png">
+        </div>
+        
+        <div class="img-underlay" id="img5">
+            <img src="/imgs/coder/mario.png">
+        </div>
+        <div id="img5">
+            <img class="img-cover" src="/imgs/coder/mario-head-5.png">
+        </div>
+
+        <div class="img-underlay" id="img6">
+            <img src="/imgs/coder/mask.png">
+        </div>
+        <div id="img6">
+            <img class="img-cover" src="/imgs/coder/mask-head-7.png">
+        </div>
+    </div>
+
+    <div class="clear-div-section"></div>
+    <div class="clear-div-section"></div>
+
+    <div class="socials">
+        <div>
+            <h2> SOCIALS </h2>
+            <p id="find-me"><i>find me online!</i> </p>
+        </div>
+        <div id="socials">
+            <p><b>GITHUB</b>
+                <br> 
+                <a href="https://github.com/emtinside"> emtinside </a>
+                <br>
+                <b>LINKEDIN</b> 
+                <br>
+                <a href="www.linkedin.com/in/emily-tumacder"> Emily Tumacder </a>
+                <br>
+                <b>EMAIL</b> 
+                <br>
+                <a href=""> emilytmdr@gmail.com </a>
+            </p>
+        </div>
+    </div>
+
+    </div>
   </body>
 </html>
 
+
+<!--
+    
+-->
